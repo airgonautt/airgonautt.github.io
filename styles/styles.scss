@@ -21,12 +21,7 @@ body{
     font-family: 'Rubik', sans-serif;
     color: var(--color-white);
     transition: all .2s ease-in-out;
-}
-a{
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    font-family: inherit;    font-size: 1.1rem;
+
 }
 
 header{
@@ -34,21 +29,21 @@ header{
     color: var(--color-white);
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 section{
     min-height: 100vh;
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 3rem 18rem;
+    padding: 2rem 18rem;
+    
 }
 
 .section{
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
     background: linear-gradient(#DEB80B, #7C2142);
+    
 }
 
 .sec1{
@@ -108,7 +103,7 @@ section{
     .control{
         padding: 1rem;
         cursor: pointer;
-        background-color: var(--color-yellow);
+        background-color: var(--color-orange);
         width: 55px;
         height: 55px;
         border-radius: 50%;
@@ -119,7 +114,7 @@ section{
         box-shadow: var(--box-shadow-1) ;
         i{
             font-size: 1.2rem;
-            color: var(--color-blue);
+            color: var(--color-white);
             pointer-events: none;
         }
     }
@@ -152,27 +147,29 @@ section{
 
 /*Header-content*/
 .header-content{
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 100vh;
     
+    justify-content: center;
+        
     .intro{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         padding-right: 18rem;
+        justify-content: center;
+            
         .name{
             font-size: 3rem;
             span{
-                color: var(--color-secondary);
+                color: var(--color-blue);
             }
         }
         p{
             margin: 1.5rem;
             line-height: 2rem;
         }
-        margin-right:auto;
-        margin-left:auto;
     }
 }
 
@@ -211,25 +208,6 @@ section{
         }
     }
 }
-
-.stat-title{
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 3.5rem 0;
-    position: relative;
-    &::before{
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 0;
-        width: 40%;
-        height: 1px;
-        background-color: var(--color-grey-5);
-        transform: translateX(-50%);
-    }
-}
-
 
 //Portfolios
 .port-text{
@@ -308,59 +286,6 @@ section{
 .portfolio-item:hover .hover-items{
     opacity: 1;
     transform: scale(1);
-}
-
-//Blogs Section
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    margin-top: 3rem;
-    .blog{
-        position: relative;
-        background-color: var(--color-grey-5);
-        border-radius: 5px;
-        box-shadow: 1px 1px 20px rgba(0,0,0,.1);
-        transition: all .4s ease-in-out;
-        &:hover{
-            box-shadow: 1px 1px 20px rgba(0,0,0,.3);
-            transform: translateY(-5px);
-            transition: all .4s ease-in-out;
-            img{
-                filter: grayscale(0);
-                transform: scale(1.1);
-                box-shadow: 0px 4px 15px rgba(0,0,0,0.8);
-            }
-        }
-        img{
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            filter: grayscale(100%);
-            transition: all .4s ease-in-out;
-        }
-        .blog-text{
-            margin-top: -7px;
-            padding: 1.1rem;
-            border-top: 8px solid var(--color-secondary);
-            h4{
-                font-size: 1.5rem;
-                margin-bottom: .7rem;
-                transition: all .4s ease-in-out;
-                cursor: pointer;
-                &:hover{
-                    color: var(--color-secondary);
-                }
-            }
-            p{
-                color: var(--color-grey-2);
-                line-height: 2rem;
-                padding-bottom: 1rem;
-            }
-        }
-    }
 }
 
 
@@ -485,7 +410,7 @@ section{
         padding: 0 2rem;
     }
     .btn-icon{
-        background-color: var(--color-secondary);
+        background-color: var(--color-blue);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -522,7 +447,7 @@ section{
         font-size: 4rem;
         font-weight: 700;
         span{
-            color: var(--color-secondary);
+            color: var(--color-orange);
         }
         .bg-text{
             position: absolute;
