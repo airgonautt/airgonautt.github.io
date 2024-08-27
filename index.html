@@ -2,297 +2,147 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ovalles Resume</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        /* Update styles to modern standards */
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .header {
-            background-color: #282c34;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .subheader {
-            font-size: 18px;
-            color: #888;
-            margin-top: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            background-color: #333;
-        }
-
-            nav ul li {
-                margin: 0 15px;
-            }
-
-                nav ul li a {
-                    color: #fff;
-                    text-decoration: none;
-                    font-weight: bold;
-                    padding: 10px 15px;
-                    display: block;
-                    transition: background 0.3s;
-                }
-
-                    nav ul li a:hover {
-                        background-color: #555;
-                    }
-
-        section {
-            padding: 50px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .main-title h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .portfolios {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .portfolio-item {
-            width: calc(50% - 20px);
-            margin-bottom: 40px;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-
-            .portfolio-item:hover {
-                transform: scale(1.05);
-            }
-
-            .portfolio-item .image img {
-                width: 100%;
-                display: block;
-            }
-
-        .hover-items {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .icons {
-            margin-top: 10px;
-        }
-
-            .icons a {
-                margin: 0 5px;
-                font-size: 1.2em;
-                color: #333;
-                transition: color 0.3s;
-            }
-
-                .icons a:hover {
-                    color: #007bff;
-                }
-
-        .contact-container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-con a {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-
-            .btn-con a:hover {
-                background-color: #0056b3;
-            }
-
-        .contact-icons a {
-            margin: 0 10px;
-            font-size: 1.5em;
-            color: #333;
-            transition: color 0.3s;
-        }
-
-            .contact-icons a:hover {
-                color: #007bff;
-            }
-    </style>
+    <title>Andres Ovalles Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body>
-    <div class="header">
-        <div>
-            Hi! My name is Andres
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- Navigation -->
+    <nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Andres Ovalles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="subheader">
-            I'm a Computer Science student interested in web design and game development
-        </div>
-    </div>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="#about" class="control control-1 active-btn">
-                    <i class="fas fa-user"></i>
-                    <span>About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#portfolio" class="control control-2">
-                    <i class="fas fa-briefcase"></i>
-                    <span>Portfolio</span>
-                </a>
-            </li>
-            <li>
-                <a href="#contact" class="control control-3">
-                    <i class="fas fa-envelope-open"></i>
-                    <span>Contact</span>
-                </a>
-            </li>
-        </ul>
     </nav>
 
-    <section class="sec1" id="about">
-        <div class="main-title">
-            <h2>About <span>Me</span></h2>
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Andres Ovalles</h1>
+            <p class="lead">Developer | Gamer | Designer</p>
+            <a href="#projects" class="btn btn-outline-light btn-lg">Explore My Work</a>
         </div>
-        <div class="about-container">
-            <div class="left-about">
-                <h3>Who am I</h3>
-                <p>
-                    I'm comfortable with Java and C#, focusing on user experience. I enjoy designing UIs, whether for front-end web applications, console applications, or video game interfaces. Creating user-friendly interfaces for the general public is my passion.
-                    <br><br>
-                </p>
-                <h3>Education</h3>
-                <p>Worcester State University<br>BS, Computer Science, 2020 - present</p>
-            </div>
-            <div class="right-about">
-                <h3>Hard Skills</h3>
-                <ul>
-                    <li>C#</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML5 & CSS</li>
-                    <li>Blender</li>
-                </ul>
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Technical writing</li>
-                    <li>Bilingual (Spanish)</li>
-                    <li>Team Player</li>
-                    <li>Problem Solver</li>
-                </ul>
-            </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="lead text-center">I'm a passionate developer with a love for esports, video game design, music, movies, and literature. I create innovative solutions by combining technical skills with artistic vision.</p>
         </div>
     </section>
 
-    <section class="sec2" id="portfolio">
-        <div class="main-title">
-            <h2>My <span>Portfolio</span></h2>
-        </div>
-        <p class="port-text">
-            Here is some of the work that I've done.
-        </p>
-        <div class="portfolios">
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="images/port1.jpeg" alt="VR Room">
-                </div>
-                <div class="hover-items">
-                    <h3>VR Room</h3>
-                    <div class="icons">
-                        <a href="https://twitter.com/hpall_and" class="icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://github.com/HPALLWOOSTATE/VRProject" class="icon">
-                            <i class="fab fa-github"></i>
-                        </a>
+    <section id="projects" class="projects-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <!-- R6 Leaderboard Tracker Project -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/port3.png" class="card-img-top" alt="R6 Leaderboard Tracker">
+                        <div class="card-body">
+                            <h5 class="card-title">R6 Esports Ranking</h5>
+                            <p class="card-text">A comprehensive ranking tool for Rainbow 6 Siege esports, integrating advanced Elo rating systems.</p>
+                            <a href="https://github.com/airgonautt/R6EsportRanking" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="images/port2.png" alt="Online Library">
-                </div>
-                <div class="hover-items">
-                    <h3>Online Library</h3>
-                    <div class="icons">
-                        <a href="https://github.com/airgonautt/WebLibrary" class="icon">
-                            <i class="fab fa-github"></i>
-                        </a>
+    
+                <!-- CRUD Library Project -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/port1.jpeg" class="card-img-top" alt="CRUD Library">
+                        <div class="card-body">
+                            <h5 class="card-title">CRUD Library</h5>
+                            <p class="card-text">A web application for managing a library system with full CRUD functionality using .NET technologies.</p>
+                            <a href="https://github.com/airgonautt/WebLibrary" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Added R6 Github link -->
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="images/port3.png" alt="R6 Leaderboard">
-                </div>
-                <div class="hover-items">
-                    <h3>R6 Leaderboard Tracker</h3>
-                    <div class="icons">
-                        <a href="https://github.com/airgonautt/R6Leaderboard" class="icon">
-                            <i class="fab fa-github"></i>
-                        </a>
+    
+                <!-- VR Project -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/port2.png" class="card-img-top" alt="VR Project">
+                        <div class="card-body">
+                            <h5 class="card-title">VR Project</h5>
+                            <p class="card-text">An immersive VR experience developed using Unity and C# to explore innovative virtual reality applications.</p>
+                            <a href="https://github.com/HPALLWOOSTATE/VRProject" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="sec3" id="contact">
-        <div class="contact-container">
-            <div class="main-title">
-                <h2>Contact <span>Me</span></h2>
-            </div>
-            <div class="contact-content-con">
-                <div class="left-contact">
-                    <h4>Contact me here</h4>
-                    <div class="contact-icons">
-                        <a href="https://www.linkedin.com/in/andres-ovalles/" class="icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:your-email@example.com" class="icon">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section py-5">
+        <div class="container">
+            <h2 class="text-center">Resume</h2>
+            <p class="text-center"><a href="AndresOvallesResume.pdf" class="btn btn-outline-primary" target="_blank">Download My Resume</a></p>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Interests</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h3>Esports</h3>
+                    <p>I am deeply involved in the esports community, particularly in competitive shooters like Rainbow 6 Siege.</p>
                 </div>
-                <div class="right-contact">
-                    <div class="btn-con">
-                        <a href="mailto:your-email@example.com" class="main-btn">
-                            <span class="btn-text">Email Me</span>
-                        </a>
-                    </div>
+                <div class="col-md-4 text-center">
+                    <h3>Video Game Design</h3>
+                    <p>I love creating game concepts and mechanics that challenge and engage players.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>Music & Movies</h3>
+                    <p>Avid listener of various genres, with a deep appreciation for narrative-driven films.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form id="contact-form" class="text-center">
+                <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+                <textarea class="form-control mb-3" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="text-center mt-4">
+                <a href="https://www.linkedin.com/in/andres-ovalles/" class="btn btn-outline-dark"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Andres Ovalles. All Rights Reserved.</p>
+        <div class="social-icons mt-3">
+            <a href="https://x.com/hpall_and" target="_blank" class="btn btn-outline-light me-2"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://x.com/airwaro" target="_blank" class="btn btn-outline-light"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

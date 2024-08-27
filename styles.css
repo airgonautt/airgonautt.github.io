@@ -1,0 +1,56 @@
+
+.gradient-bg {
+  background: linear-gradient(90deg, #0bb1a9, #4f1b74); /* cuts halfway horizontally*/
+}
+
+.bg-gray {
+  background-color: #343a40; /* Light gray background */
+}
+
+.hero {
+  color: white;
+}
+
+/* Optional: Adjust text and button colors to ensure visibility */
+.hero .btn-outline-light {
+  border-color: white;
+  color: white;
+}
+
+.about-section {
+  color: white;
+  background-color: #343a40;
+}
+.projects-section{
+  
+  color: white;
+  background-color: #343a40;
+}
+.resume-section{
+  color: white;
+  background-color: #343a40;
+}
+.contact-section{
+  
+  color: white;
+  background-color: #343a40;
+}
+.interests-section{
+  
+  color: white;
+  background-color: #343a40;
+}
+.btn-outline-dark{
+  color: white;
+  background-color: #0bb1a9;
+  border-color: white;
+}
+.btn-outline-primary{
+  color: white;
+  background-color: #0bb1a9;
+  border-color: white;
+  
+}
+.btn-hover-bg{
+  color: #4f1b74;
+}
