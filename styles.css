@@ -42,13 +42,13 @@
 }
 .btn-outline-dark{
   color: white;
-  background-color: #0bb1a9;
-  border-color: white;
+  background-color: hsl(177, 88%, 37%);
+  border-color: gray;
 }
 .btn-outline-primary{
   color: white;
   background-color: #0bb1a9;
-  border-color: white;
+  border-color: gray;
   
 }
 .btn-hover-bg{
