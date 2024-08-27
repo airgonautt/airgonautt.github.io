@@ -7,77 +7,215 @@
     <title>Ovalles Resume</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Update styles to modern standards */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        .header {
+            background-color: #282c34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .subheader {
+            font-size: 18px;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            background-color: #333;
+        }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: bold;
+                    padding: 10px 15px;
+                    display: block;
+                    transition: background 0.3s;
+                }
+
+                    nav ul li a:hover {
+                        background-color: #555;
+                    }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .main-title h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .portfolios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .portfolio-item {
+            width: calc(50% - 20px);
+            margin-bottom: 40px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+            .portfolio-item:hover {
+                transform: scale(1.05);
+            }
+
+            .portfolio-item .image img {
+                width: 100%;
+                display: block;
+            }
+
+        .hover-items {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .icons {
+            margin-top: 10px;
+        }
+
+            .icons a {
+                margin: 0 5px;
+                font-size: 1.2em;
+                color: #333;
+                transition: color 0.3s;
+            }
+
+                .icons a:hover {
+                    color: #007bff;
+                }
+
+        .contact-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-con a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+            .btn-con a:hover {
+                background-color: #0056b3;
+            }
+
+        .contact-icons a {
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+            .contact-icons a:hover {
+                color: #007bff;
+            }
+    </style>
 </head>
 
 <body>
     <div class="header">
-      <div>
-        Hi! my name is Andres
-      </div>
-      <div class="subheader">
-        I'm a Computer Science student and I'm interested on web design and game development
-      </div>
+        <div>
+            Hi! My name is Andres
+        </div>
+        <div class="subheader">
+            I'm a Computer Science student interested in web design and game development
+        </div>
     </div>
-    
+
     <nav>
-      <ul>
-        <li><a href="#about" class="control control-1 active-btn">
-            <i class="fas fa-user"></i>
-            <span>about</span>
-            </a>
-        </li>
-        <li><a href="#portfolio" class="control control-2">
-                <i class="fas fa-briefcase"></i>
-                <span>portfolio</span>
-            </div>
-        </li>
-        <li><a href="#contact" class="control control-3">
-                <i class="fas fa-envelope-open"></i>
-                <span>contact</span>
-            </div>
-        </li>
-      </ul>
+        <ul>
+            <li>
+                <a href="#about" class="control control-1 active-btn">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio" class="control control-2">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="control control-3">
+                    <i class="fas fa-envelope-open"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
     </nav>
 
     <section class="sec1" id="about">
         <div class="main-title">
-            <h2><br>About <span>me</span></h2>
+            <h2>About <span>Me</span></h2>
         </div>
         <div class="about-container">
             <div class="left-about">
-                <h3>Who am I<br></h3>
+                <h3>Who am I</h3>
                 <p>
-                    I'm confortable with Java and C#, with a focus on user experience I like to design UI's!
-                    Be it front-end, console applications, and videogame interfaces, I like to make neat things for the general public
-                    <br /> <br />
+                    I'm comfortable with Java and C#, focusing on user experience. I enjoy designing UIs, whether for front-end web applications, console applications, or video game interfaces. Creating user-friendly interfaces for the general public is my passion.
+                    <br><br>
                 </p>
-                <h3><br>Education</h3>
-                <p font-size: 20px>Worcester State University<br>BS, Computer Science, 2020- present</p>
+                <h3>Education</h3>
+                <p>Worcester State University<br>BS, Computer Science, 2020 - present</p>
             </div>
             <div class="right-about">
-                <h3>Hard Skills<br></h3>
-                    <ul>
-                        <li>C#</li>
-                        <li>Java</li>
-                        <li>JS</li>
-                        <li>HTML5 & CSS</li>
-                        <li>Blender</li>
-                    </ul>
-                <h3><br>Soft Skills</h3>
-                    <ul>
-                        <li>Technical writing</li>
-                        <li>Bilingual (Spanish)</li>
-                        <li>Team pLayer</li>
-                        <li>Problem solver</li>
-                    </ul>
+                <h3>Hard Skills</h3>
+                <ul>
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML5 & CSS</li>
+                    <li>Blender</li>
+                </ul>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Technical writing</li>
+                    <li>Bilingual (Spanish)</li>
+                    <li>Team Player</li>
+                    <li>Problem Solver</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section class="sec2" id="portfolio">
         <div class="main-title">
-            <h2><br>My <span>Portfolio</span></h2>
+            <h2>My <span>Portfolio</span></h2>
         </div>
         <p class="port-text">
             Here is some of the work that I've done.
@@ -85,7 +223,7 @@
         <div class="portfolios">
             <div class="portfolio-item">
                 <div class="image">
-                    <img src="images/port1.jpeg" alt="">
+                    <img src="images/port1.jpeg" alt="VR Room">
                 </div>
                 <div class="hover-items">
                     <h3>VR Room</h3>
@@ -101,12 +239,26 @@
             </div>
             <div class="portfolio-item">
                 <div class="image">
-                    <img src="images/port2.png" alt="">
+                    <img src="images/port2.png" alt="Online Library">
                 </div>
                 <div class="hover-items">
                     <h3>Online Library</h3>
                     <div class="icons">
                         <a href="https://github.com/airgonautt/WebLibrary" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Added R6 Github link -->
+            <div class="portfolio-item">
+                <div class="image">
+                    <img src="images/port3.png" alt="R6 Leaderboard">
+                </div>
+                <div class="hover-items">
+                    <h3>R6 Leaderboard Tracker</h3>
+                    <div class="icons">
+                        <a href="https://github.com/airgonautt/R6Leaderboard" class="icon">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -122,55 +274,25 @@
             </div>
             <div class="contact-content-con">
                 <div class="left-contact">
-                    <h4 style="text-align: center;">Find me at!</h4>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-envelope"></i>
-                                <span>Email:</span>
-                            </div>
-                            <p>
-                                <span>eovalles.andres@gmail.com</span>
-                            </p>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-user-graduate"></i>
-                                <span>Mobile Number:</span>
-                            </div>
-                            <p>
-                                <span>508-579-7329</span>
-                            </p>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-globe-africa"></i>
-                                <span>Languages:</span>
-                            </div>
-                            <p>
-                                <span>English, Spanish</span>
-                            </p>
-                        </div>
-                                            <div class="btn-con">
-                        <a href="images/Ovalles_resume.pdf" class="main-btn">
-                        <span class="btn-text">Download CV</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    <h4>Contact me here</h4>
+                    <div class="contact-icons">
+                        <a href="https://www.linkedin.com/in/andres-ovalles/" class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:your-email@example.com" class="icon">
+                            <i class="fas fa-envelope"></i>
                         </a>
                     </div>
-                    </div>
-                    <div class="contact-icons">
-                        <div class="contact-icon">
-                            <a href="https://github.com/airgonautt?tab=repositories" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                </div>
+                <div class="right-contact">
+                    <div class="btn-con">
+                        <a href="mailto:your-email@example.com" class="main-btn">
+                            <span class="btn-text">Email Me</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-  </body>
-  
-  
+</body>
 </html>
