@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\Projects\\airgonautt.github.io\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAABUBAAAAMjpp4dotwIMAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-08-27T15:20:07.012Z",
               "EditorCaption": ""
@@ -45,10 +45,12 @@
               "RelativeDocumentMoniker": "styles\\style.css",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\Projects\\airgonautt.github.io\\styles\\style.css",
               "RelativeToolTip": "styles\\style.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-27T15:20:05.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T15:20:05.925Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
