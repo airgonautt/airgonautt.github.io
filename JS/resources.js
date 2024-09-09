@@ -44,7 +44,14 @@ const imageData = [
     { url :"images/whws2023.png", alt: "wolves"},
     { url :"images/wyld2024.png", alt: "wylde"},
     // Add more images here
+    { url :"images/players/cyber.avif", alt: "cyber"},
+    { url :"images/players/handy.avif", alt: "handy"},
+    { url :"images/players/kds.avif", alt: "kds"},
+    { url :"images/players/soulz1.avif", alt: "soulz1"},
+    { url :"images/players/vitaking.avif", alt: "vitaking"},
+    { url :"images/players/rafadell.avif", alt: "rafadell"},
 ];
+
 
 const imageGrid = document.getElementById('image-grid');
 
