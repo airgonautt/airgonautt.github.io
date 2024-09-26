@@ -1,29 +1,32 @@
-const carousel = document.querySelector('.carousel');
-const carouselItems = document.querySelectorAll('.carousel-item');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+document.addEventListener('DOMContentLoaded', function() {
+  const navbar = document.getElementById('navbar');
+  const navbarName = document.getElementById('navbar-name'); 
+  const navbarPhoto = document.getElementById('navbar-photo');
+  const introSection = document.getElementById('intro'); 
+  navbarName.textContent = '';
+  navbarPhoto.hidden = true;
+  navbar.hidden = true;
 
-let currentIndex = 0;
+  // reveals contents after scrolling past intro section
+  window.addEventListener('scroll', function() {
+      const introBottom = introSection.getBoundingClientRect().bottom; 
 
-// Update carousel display
-function updateCarousel() {
-    const offset = currentIndex * -100;
-    carouselItems.forEach(item => {
-        item.style.transform = `translateX(${offset}%)`;
-    });
-}
+      if (introBottom <= 0) {
+          navbarName.textContent = 'Andres Ovalles';
+          navbarPhoto.hidden = false;
+          navbar.hidden = false;
 
-// Show next item
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % carouselItems.length;
-    updateCarousel();
+          // Add bounce class
+          navbarName.classList.add('bounce');
+          navbarPhoto.classList.add('bounce');
+      } else {
+          navbarName.textContent = ''; 
+          navbarPhoto.hidden = true;
+          navbar.hidden = true;
+
+          // Remove bounce class for re-triggering the animation
+          navbarName.classList.remove('bounce');
+          navbarPhoto.classList.remove('bounce');
+      }
+  });
 });
-
-// Show previous item
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-    updateCarousel();
-});
-
-// Initialize carousel
-updateCarousel();
