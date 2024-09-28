@@ -11,6 +11,7 @@
 }
 
 .layout {
+  overflow: auto;
   position: relative;
   width: 100%;
   display: grid;
@@ -111,19 +112,34 @@
   margin-bottom: 15px;
   margin-right: 15px;
   margin-left: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 .card {
-  border: none; /* Remove card borders for a modern look */
-  transition: transform 0.3s ease; /* Add hover animation */
+  border: none;
+  /*Removecardbordersforamodernlook*/transition: transform 0.3s ease;
+   /* Add hover animation */;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  background-color:#F38831;
+  border-width:1.5px;
+  border-style:solid;
+  border-color:black;
+
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Lift card on hover */
+  transform: translateY(-10px);
+   /* Lift card on hover */;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
 }
 
 .card img {
@@ -144,16 +160,37 @@
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
   transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  background-color:#1a181bff;
+  ;
+  border-width:1.5px;
+  border-style:solid;
+  border-color:black;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+  background-color: white;
+  border-color: #1a181bff;
+  color: #1a181bff;
 }
 
+.btn-small{
+  background-color: rgb(243, 136, 49);
+  border-color:  #1a181bff;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+.btn-small:hover{
+  background-color: rgb(173, 117, 71);
+  border-color: #1a181bff;
+}
 
 #navbar-name {
   font-family: 'Josefin Sans', sans-serif;
@@ -168,10 +205,10 @@
   height: 45px;
   margin-right: 10px;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 #canvas {
