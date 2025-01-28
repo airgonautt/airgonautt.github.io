@@ -29,9 +29,8 @@
         <div class="body">
            
             <section id="intro" class="intro-section py-5">
-                <div class="container d-flex flex-column align-items-center"> <!-- Use flex-column to stack the button below -->
+                <div class="container d-flex flex-column align-items-center"> 
                     
-                    <!-- Flexbox for image and text in the same row -->
                     <div class="d-flex justify-content-center align-items-center"> 
                         <img src="images/Docs/me.jpg" alt="Andres Ovalles" class="intro-photo rounded-circle shadow-lg" style="width: 150px; height: 150px; object-fit: cover; margin-left: 7px;">
             
@@ -52,22 +51,20 @@
                         </div>
                     </div>
             
-                    <!-- Button centered under both image and text -->
-                    <div class="mt-4 align-content-start"> <!-- Added margin-top to give space between the row and the button -->
+                    <div class="mt-4 align-content-start"> 
                         <a href="#projects" class="btn btn-small josefin-sans-bold" style="font-size:20px">See My Work</a>
                     </div>
             
                 </div>
             </section>
-                        
 
             <section id="about" class="about-section py-5">
                 <div class="container">
                     <h1 class="text-start">About Me</h1>
-                    <p class="lead text-start">Recent CS grad from MA, with focus on <span style="color: #fc6b03;">
+                    <p class="lead text-start">CS grad from MA, with focus on <span style="color: #fc6b03;">
                         backend</span> dev work, proficient in <span style="color: #fc6b03;">SQL</span> 
                         db's and <span style="color: #fc6b03;">.NET</span> framework. With <span style="color: #fc6b03;">4 years</span> of theoretical experience in <span style="color: #fc6b03;">OOP</span> and algorithm design, I thrive in<span style="color: #fc6b03;">
-                        team</span> environments, experienced with scrum and <span style="color: #fc6b03;">Jira</span>, and love to collaborate through my <span style="color: #fc6b03;">skills</span>, work <span style="color: #fc6b03;">ethic</span> and <span style="color: #fc6b03;">creativity</span>.
+                        team</span> environments, experienced with scrum and <span style="color: #fc6b03;">QA Testing</span>. I am passionate for what I do, and love to contribute with my <span style="color: #fc6b03;">skills</span>, work <span style="color: #fc6b03;">ethic</span> and <span style="color: #fc6b03;">creativity</span>.
                     </p>
                     
                 </div>
@@ -76,9 +73,8 @@
             <section id="education" class="education-section py-5">
                 <div class="container">
                     <h1 class="text-start">Education</h1>
-                        <p></p>
-                        <h5>Worcester State University (2020-2024)</h5>
-                        <p class="lead text-start">Bachelors in Computer Science</p>
+                        <h4>Bachelors in Computer Science</h4>
+                        <h5>Worcester State University - Worcester, MA (2020-2024)</h5>
                 </div>
             </section>
             
@@ -86,14 +82,15 @@
                 <div class="container">
                     <h1 class="text-start">Experience</h1>
                         <p></p>
-                        <h5>Games QA Tester - GlobalStep (2024-Present)</h5>
-                        <p class="lead text-start">Conducted comprehensive software testing, including functional, 
-                            exploratory, usability, compatibility, and regression testing, to 
-                            ensure the quality and stability of gaming projects. Collaborated 
-                            with cross-functional teams to understand project goals and 
-                            testing strategies, as well as delivering concise and actionable bug 
-                            reports, incorporating root cause analysis and constructive 
-                            feedback</p>
+                        <h4>Games QA Tester</h4>
+                        <h5>GlobalStep - Richardson, TX (2024-Present)</h5>
+                        <p class="lead text-start">Performed comprehensive <span style="color: #fc6b03;">software testing</span>, including functional,
+                            exploratory, compatibility, and regression testing, to ensure the
+                            quality and stability of <span style="color: #fc6b03;">video-game projects</span>. Collaborated with
+                            cross-functional teams to understand project goals and testing
+                            strategies, as well as deliver concise and actionable <span style="color: #fc6b03;">bug reports</span> in
+                            <span style="color: #fc6b03;">Jira</span>, that aim to incorporate root cause <span style="color: #fc6b03;">analysis</span> and constructive
+                            <span style="color: #fc6b03;">feedback.</span></p>
                 </div>
             </section>
 
@@ -102,54 +99,57 @@
                     <h1 class="text-start">Projects</h1>
                     <p></p>
                     <div class="row flex-column align-items-center">
-                        <!--Pantry Card-->
-                        <div class="col-12">
-                            <div class="card mb-4 shadow-sm d-flex flex-row align-items-center card-custom-size">
-                                <img src="images/Docs/thea.jpg" class="card-img-left img-fluid" alt="Food Pantry">
-                                <div class="card-body"> 
-                                    <h5 class="card-title">Food Pantry API</h5>
-                                    <p class="card-text">Maintained and designed endpoints for GuestInfoBackend API on my school's food pantry </p>
-                                    <a href="https://librefoodpantry.org/docs/acknowledgements" target="_blank" class="btn btn-primary">Live Now</a>
-                                </div>
-                            </div>
-                        </div>
-
+                        
                         <!-- R6 Leaderboard Tracker Project Card -->
                         <div class="col-12">
                             <div class="card mb-4 shadow-sm d-flex flex-row align-items-center card-custom-size">
                                 <img src="images/Docs/ranking.jpg" class="card-img-left img-fluid" alt="R6 Leaderboard Tracker">
                                 <div class="card-body">
                                     <h5 class="card-title">R6 Esports Ranking</h5>
-                                    <p class="card-text">A comprehensive ranking tool for Rainbow 6 Siege esports, integrating advanced Elo rating systems.</p>
+                                    <p class="card-text">Blazor CRUD webapp with cookie-based authentication. Developed using
+                                        .NET9 and EF Core, MSSQL, and deployed on Azure. It features dynamic team
+                                        management, user roles, and team/region statistics and history.</p>
                                     <href href="https://github.com/airgonautt/R6EsportRanking" target="_blank" class="btn btn-primary"> View in GitHub <img src="images/icons/github-mark-white.png" alt="View on Github" margin:0px width="24" height="24"></href>
-                                    <a href="https://r6proranking.azurewebsites.net/" target="_blank" class="btn btn-primary">Live Now</a>
+                                    <a href="https://r6proranking.azurewebsites.net/" target="_blank" class="btn btn-primary">Live Now <img src="images/icons/globe.png" alt="View on Github" margin:0px width="24" height="24"></a>
                                 </div>
                             </div>
                         </div>
-            
-                        <!-- CRUD Library Project Card -->
+                        <!--Pantry Card-->
                         <div class="col-12">
                             <div class="card mb-4 shadow-sm d-flex flex-row align-items-center card-custom-size">
-                                <img src="images/Docs/port2.png" class="card-img-left img-fluid" alt="CRUD Library">
-                                <div class="card-body">
-                                    <h5 class="card-title">CRUD Library</h5>
-                                    <p class="card-text">A web application for managing a library system with full CRUD functionality using .NET technologies.</p>
-                                    <a href="https://github.com/airgonautt/WebLibrary" target="_blank" class="btn btn-primary">View on GitHub <img src="images/icons/github-mark-white.png" alt="View on Github" margin:0px width="24" height="24"></a>
+                                <img src="images/Docs/thea.jpg" class="card-img-left img-fluid" alt="Food Pantry">
+                                <div class="card-body"> 
+                                    <h5 class="card-title">Food Pantry API</h5>
+                                    <p class="card-text">Maintained and designed endpoints for GuestInfoBackend API on my school's food pantry. </p>
+                                    <a href="https://librefoodpantry.org/docs/acknowledgements" target="_blank" class="btn btn-primary">Live Now <img src="images/icons/globe.png" alt="View on Github" margin:0px width="24" height="24"></a>
                                 </div>
                             </div>
                         </div>
-            
                         <!-- VR Project Card -->
                         <div class="col-12">
                             <div class="card mb-4 shadow-sm d-flex flex-row align-items-center card-custom-size">
                                 <img src="images/Docs/port1.jpeg" class="card-img-left img-fluid" alt="VR Project">
                                 <div class="card-body">
                                     <h5 class="card-title">VR Project</h5>
-                                    <p class="card-text">An immersive VR experience developed using Unity and C# to explore innovative virtual reality applications.</p>
+                                    <p class="card-text">Designed Virtual Reality activities in Unreal Engine 5 for WSU’s studies on
+                                        human perception and cognition. Notable features: implementation of MetaXR
+                                        SDK for hand-eye tracking, file management system, and data visualization tools.</p>
                                     <a href="https://github.com/HPALLWOOSTATE/VRProject" target="_blank" class="btn btn-primary">View on GitHub <img src="images/icons/github-mark-white.png" alt="View on Github" margin:0px width="24" height="24"></a>
                                 </div>
                             </div>
                         </div>
+                        <!-- CRUD Library Project Card -->
+                        <div class="col-12">
+                            <div class="card mb-4 shadow-sm d-flex flex-row align-items-center card-custom-size">
+                                <img src="images/Docs/port2.png" class="card-img-left img-fluid" alt="CRUD Library">
+                                <div class="card-body">
+                                    <h5 class="card-title">CRUD Library</h5>
+                                    <p class="card-text">A web application for managing a library system with full CRUD functionality using ASP.NET</p>
+                                    <a href="https://github.com/airgonautt/WebLibrary" target="_blank" class="btn btn-primary">View on GitHub <img src="images/icons/github-mark-white.png" alt="View on Github" margin:0px width="24" height="24"></a>
+                                </div>
+                            </div>
+                        </div>  
+    
                     </div>
                 </div>
             </section>
